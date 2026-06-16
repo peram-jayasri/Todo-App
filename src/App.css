@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b1020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.input-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.input-section button {
+  padding: 18px 30px;
+  border: none;
+  border-radius: 8px;
+  background: royalblue;
+  color: white;
+  cursor: pointer;
+}
+
+.input-section button:active{
+   padding: 16px 28px;
+   font-size: 12px;
+   background-color: navy;
+}
+
+.todo-list {
+  list-style: none;
+  width: 100%;
+}
+
+.todo-item {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.task-text {
+  font-size: 20px;
+  word-break: break-word;
+}
+
+.task-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.task-actions input {
+  width: 20px;
+  height: 20px;
+  
+}
+.task-actions input:active{
+   width: 15px;
+   height: 15px;
+}
+
+.edit-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: royalblue;
+  color: white;
+  cursor: pointer;
+}
+.edit-btn:hover{
+   padding: 13px 26px;
+   background-color:navy;
+   
+}
+.edit-btn:active{
+   padding: 11px 24px;
+}
+
+.delete-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: crimson;
+  color: white;
+  cursor: pointer;
+}
+.delete-btn:hover{
+   padding: 13px 26px;
+   background-color: darkred;
+}
+.delete-btn:active{
+   padding: 11px 24px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  flex: 1;
+}
+
+.number{
+  font-size:22px;
+  font-weight: normal;
+  min-width:35px;
+}
